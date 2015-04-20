@@ -12,6 +12,9 @@ server:
 
 coverage:
 	clear
+	mocha -R html-cov > coverage.html
+
+
 
 
 NG:
@@ -20,5 +23,5 @@ NG:
 
 JSHint:
 	clear
-
+	./node_modules/.bin/hshint .
 
