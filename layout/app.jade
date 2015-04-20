@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title= typeof(title)!=="undefined"? title : "untitled"
+		link(rel="stylesheet", href="app.css")
+		meta(charset="UTF-8")
+		meta(name="veiwport", content="width=device-width, initial-scale=1.0")
+	body(ng-app="app")
+		div(ng-controller="helloWorldCtrl")
+			div(hello-world name="name")
+		script(src="angular/angular.js")
+		script(src="app.js")
+		
