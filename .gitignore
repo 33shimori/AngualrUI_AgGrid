@@ -3,3 +3,9 @@ node_modules
 /assets/angular-mocks/
 /assets/angular-route/
 /assets/angular-bootstrap/
+/assets/ng-grid/
+/assets/jquery/
+/css/mixins/
+/css/
+/assets/bootstrap.js
+/assets/jquery-2.1.3.js

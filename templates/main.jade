@@ -1,0 +1,16 @@
+div(class="row-fluid")
+	carousel(interval="setInteval")
+		slide(ng-repeat="slide in slides", active="slide.active")
+			img(ng-src="{{slide.image}}", style="margin:auto")
+			div(class="carousel-caption")
+				h2 {{slide.title}}
+				p {{slide.text}}
+div(class="hero-unit")
+	h1 Welcom to Healthy living
+	p This is a Rapid Prototype demo on how you can use AngularJS with Angular UI and Bootstrap 
+		| to quickly build a clickable prototype that can be shown to clients
+div(class="row-fluid")
+	div(class="col-md-4", ng-repeat="block in content")
+		img(class="img-circle", ng-src="{{block.img}}")
+		h3 {{block.title}}
+		p {{block.summary}}

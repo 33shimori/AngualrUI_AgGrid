@@ -2,7 +2,7 @@ var express = require('express'),
 				favicon = require('serve-favicon');
 
 var app = express();
-app.use(favicon(__dirname +'/assets/favicon.ico'));
+app.use(favicon(__dirname +'/assets/logo.ico'));
 
 app.set ('view engine', 'jade');
 app.set ('views', __dirname + '/layout');
@@ -11,6 +11,8 @@ if (app.get('env')=== 'development'){
 }
 
 app.use(require('./controllers'));
+
+
 
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function (){
